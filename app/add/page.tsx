@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import GlassCard from '@/components/GlassCard'
+import PageTransition from '@/components/PageTransition'
 import UploadZone from '@/components/UploadZone'
 import { uploadItem } from '@/lib/api'
 import type { WardrobeItemAnalysis } from '@/lib/types'
@@ -49,6 +50,7 @@ export default function AddPage() {
   const labelStyle = { color: '#c77dff' }
 
   return (
+    <PageTransition>
     <div className="px-4 pt-6 pb-4 flex flex-col gap-4">
       <h1
         className="font-syne font-extrabold text-2xl"
@@ -134,5 +136,6 @@ export default function AddPage() {
         </motion.button>
       )}
     </div>
+    </PageTransition>
   )
 }

@@ -7,6 +7,7 @@ import { WardrobeItem, Category, CATEGORY_MAP } from '@/lib/types'
 import { getWardrobe, deleteItem } from '@/lib/api'
 import CategoryFilter from '@/components/CategoryFilter'
 import WardrobeGrid from '@/components/WardrobeGrid'
+import PageTransition from '@/components/PageTransition'
 
 export default function ClosetPage() {
   const [items, setItems] = useState<WardrobeItem[]>([])
@@ -36,6 +37,7 @@ export default function ClosetPage() {
   }
 
   return (
+    <PageTransition>
     <main className="pt-6 pb-28 px-4 min-h-screen bg-[#080610]">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
@@ -79,5 +81,6 @@ export default function ClosetPage() {
         </Link>
       </motion.div>
     </main>
+    </PageTransition>
   )
 }

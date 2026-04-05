@@ -7,6 +7,7 @@ import { MOODS, MoodId } from '@/lib/types'
 import { suggestOutfits } from '@/lib/api'
 import MoodCard from '@/components/MoodCard'
 import ResultBox from '@/components/ResultBox'
+import PageTransition from '@/components/PageTransition'
 
 export default function IdeasPage() {
   const [selectedMoods, setSelectedMoods] = useState<MoodId[]>([])
@@ -53,6 +54,7 @@ export default function IdeasPage() {
     'w-full rounded-xl bg-white/[0.06] border border-white/10 px-4 py-3 text-[#f0eaff] placeholder:text-[#f0eaff]/30 outline-none focus:border-[#c77dff]/50 text-sm font-inter transition-colors'
 
   return (
+    <PageTransition>
     <div className="pt-6 pb-28 px-4">
       <h1 className="font-syne text-2xl font-bold text-[#f0eaff]">
         Outfit Ideas ✨
@@ -130,5 +132,6 @@ export default function IdeasPage() {
         </button>
       )}
     </div>
+    </PageTransition>
   )
 }

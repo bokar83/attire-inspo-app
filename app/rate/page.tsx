@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import UploadZone from '@/components/UploadZone'
 import ResultBox from '@/components/ResultBox'
+import PageTransition from '@/components/PageTransition'
 import { analyzeOutfit } from '@/lib/api'
 
 export default function RateMyFitPage() {
@@ -36,6 +37,7 @@ export default function RateMyFitPage() {
   }
 
   return (
+    <PageTransition>
     <div className="pt-6 pb-28 px-4">
       <h1 className="font-syne text-2xl font-bold text-[#f0eaff]">Rate My Fit 🔥</h1>
       <p className="text-sm text-[#f0eaff]/50 mt-1 mb-6">
@@ -80,5 +82,6 @@ export default function RateMyFitPage() {
         )}
       </AnimatePresence>
     </div>
+    </PageTransition>
   )
 }

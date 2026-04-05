@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import GlassCard from '@/components/GlassCard'
+import PageTransition from '@/components/PageTransition'
 import { useVibes } from '@/lib/useVibes'
 import { getWardrobe } from '@/lib/api'
 import { MOODS } from '@/lib/types'
@@ -19,6 +20,7 @@ export default function HomePage() {
   }, [])
 
   return (
+    <PageTransition>
     <div className="px-4 pt-8 pb-4 flex flex-col gap-5">
       {/* Greeting */}
       <motion.div
@@ -188,5 +190,6 @@ export default function HomePage() {
         </motion.button>
       </motion.div>
     </div>
+    </PageTransition>
   )
 }
