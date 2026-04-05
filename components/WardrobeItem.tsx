@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { WardrobeItem as WardrobeItemType } from '@/lib/types'
-import { cn } from '@/lib/utils'
 
 interface WardrobeItemProps {
   item: WardrobeItemType
@@ -13,10 +12,10 @@ interface WardrobeItemProps {
 
 export default function WardrobeItem({ item, onDelete }: WardrobeItemProps) {
   const [showDelete, setShowDelete] = useState(false)
+  const [imgError, setImgError] = useState(false)
 
   const label = item.analysis.type || item.filename
-  const hasImage = !!item.image_url || true // always attempt image load via proxy
-  const imageUrl = `/api/proxy?endpoint=${encodeURIComponent('/wardrobe/' + item.id + '/image')}`
+  const imageUrl = `/api/proxy?endpoint=/wardrobe/${item.id}/image`
 
   return (
     <motion.div
@@ -29,18 +28,20 @@ export default function WardrobeItem({ item, onDelete }: WardrobeItemProps) {
     >
       {/* Image or placeholder */}
       <div className="relative flex-1 min-h-0">
-        <Image
-          src={imageUrl}
-          alt={label}
-          fill
-          unoptimized
-          className="object-cover"
-          onError={() => {}}
-        />
-        {/* Fallback gradient shown behind image in case of error — CSS only fallback */}
-        <div className="absolute inset-0 -z-10 flex items-center justify-center bg-gradient-to-br from-[#c77dff]/20 to-[#ff85a1]/20">
-          <span className="text-5xl">🧥</span>
-        </div>
+        {imgError ? (
+          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#c77dff]/20 to-[#ff85a1]/20">
+            <span className="text-5xl">🧥</span>
+          </div>
+        ) : (
+          <Image
+            src={imageUrl}
+            alt={label}
+            fill
+            unoptimized
+            className="object-cover"
+            onError={() => setImgError(true)}
+          />
+        )}
       </div>
 
       {/* Bottom overlay */}
