@@ -11,11 +11,11 @@ export default function GlassCard({ children, className, style }: GlassCardProps
   return (
     <div
       className={cn(
-        'rounded-2xl border border-white/10 p-4',
+        'rounded-2xl border border-white/20 p-4',
         'backdrop-blur-glass',
         className
       )}
-      style={{ background: 'rgba(255,255,255,0.04)', ...style }}
+      style={{ background: 'rgba(255,255,255,0.12)', ...style }}
     >
       {children}
     </div>

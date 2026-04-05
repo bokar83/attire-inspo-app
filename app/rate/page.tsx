@@ -39,15 +39,15 @@ export default function RateMyFitPage() {
   return (
     <PageTransition>
     <div className="pt-6 pb-28 px-4">
-      <h1 className="font-syne text-2xl font-bold text-[#f0eaff]">Rate My Fit 🔥</h1>
-      <p className="text-sm text-[#f0eaff]/50 mt-1 mb-6">
+      <h1 className="font-syne text-2xl font-bold text-[#f5f0ff]">Rate My Fit 🔥</h1>
+      <p className="text-sm text-[#f5f0ff]/75 mt-1 mb-6">
         Upload your outfit and get an honest AI critique
       </p>
 
       <UploadZone onFile={handleFile} preview={preview} />
 
       <div className="mt-4">
-        <label className="block text-xs text-[#f0eaff]/50 mb-1">
+        <label className="block text-xs text-[#f5f0ff]/75 mb-1">
           What&apos;s the occasion?
         </label>
         <input
@@ -55,7 +55,7 @@ export default function RateMyFitPage() {
           value={occasion}
           onChange={e => setOccasion(e.target.value)}
           placeholder="Job interview, date night, casual day…"
-          className="w-full rounded-xl bg-white/[0.06] border border-white/10 px-4 py-3 text-[#f0eaff] placeholder:text-[#f0eaff]/30 outline-none focus:border-[#c77dff]/50 text-sm font-inter"
+          className="w-full rounded-xl bg-white/[0.12] border border-white/20 px-4 py-3 text-[#f5f0ff] placeholder:text-[#f5f0ff]/60 outline-none focus:border-[#c77dff]/50 text-sm font-inter"
         />
       </div>
 
@@ -63,7 +63,7 @@ export default function RateMyFitPage() {
         whileTap={{ scale: 0.97 }}
         onClick={handleSubmit}
         disabled={loading || !file}
-        className="mt-5 w-full bg-gradient-to-r from-[#c77dff] to-[#ff85a1] text-[#080610] font-semibold font-syne rounded-2xl py-3 text-sm disabled:opacity-40 disabled:cursor-not-allowed"
+        className="mt-5 w-full bg-gradient-to-r from-[#c77dff] to-[#ff85a1] text-[#12102a] font-semibold font-syne rounded-2xl py-3 text-sm disabled:opacity-40 disabled:cursor-not-allowed"
       >
         Get My Rating ✨
       </motion.button>

@@ -33,7 +33,7 @@ export default function MoodCard({ mood, selected, onToggle }: MoodCardProps) {
       >
         {mood.icon}
       </motion.div>
-      <span className="text-sm font-medium font-inter text-[#f0eaff] text-center leading-tight">
+      <span className="text-sm font-medium font-inter text-[#f5f0ff] text-center leading-tight">
         {mood.label}
       </span>
     </motion.button>

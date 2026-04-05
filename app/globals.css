@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-  --bg: #080610;
+  --bg: #12102a;
   --accent: #c77dff;
   --lilac: #e0aaff;
   --rose: #ff85a1;
@@ -16,8 +16,8 @@
 }
 
 html, body {
-  background: #080610;
-  color: #f0eaff;
+  background: #12102a;
+  color: #f5f0ff;
   font-family: 'Inter', system-ui, sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;

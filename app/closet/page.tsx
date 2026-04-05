@@ -38,11 +38,11 @@ export default function ClosetPage() {
 
   return (
     <PageTransition>
-    <main className="pt-6 pb-28 px-4 min-h-screen bg-[#080610]">
+    <main className="pt-6 pb-28 px-4 min-h-screen bg-[#12102a]">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
-        <h1 className="font-syne text-2xl font-bold text-[#f0eaff]">My Closet</h1>
-        <span className="rounded-full bg-white/[0.08] border border-white/10 text-[#f0eaff]/60 text-xs px-3 py-1 font-inter">
+        <h1 className="font-syne text-2xl font-bold text-[#f5f0ff]">My Closet</h1>
+        <span className="rounded-full bg-white/[0.08] border border-white/20 text-[#f5f0ff]/60 text-xs px-3 py-1 font-inter">
           {items.length} pieces
         </span>
       </div>
@@ -58,7 +58,7 @@ export default function ClosetPage() {
           {Array.from({ length: 4 }).map((_, i) => (
             <div
               key={i}
-              className="aspect-[3/4] rounded-xl backdrop-blur-glass bg-white/[0.04] border border-white/10 animate-pulse"
+              className="aspect-[3/4] rounded-xl backdrop-blur-glass bg-white/[0.10] border border-white/20 animate-pulse"
             />
           ))}
         </div>

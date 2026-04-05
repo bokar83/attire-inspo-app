@@ -44,8 +44,8 @@ export default function AddPage() {
   }
 
   const inputClass =
-    'w-full rounded-xl px-3 py-2.5 text-sm outline-none border border-white/10 text-white placeholder:text-white/25 transition-colors focus:border-accent'
-  const inputStyle = { background: 'rgba(255,255,255,0.06)' }
+    'w-full rounded-xl px-3 py-2.5 text-sm outline-none border border-white/20 text-white placeholder:text-white/25 transition-colors focus:border-accent'
+  const inputStyle = { background: 'rgba(255,255,255,0.14)' }
   const labelClass = 'block text-xs font-bold uppercase tracking-widest mb-1.5'
   const labelStyle = { color: '#c77dff' }
 

@@ -23,7 +23,7 @@ export default function WardrobeItem({ item, onDelete }: WardrobeItemProps) {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      className="relative flex flex-col aspect-[3/4] rounded-xl overflow-hidden bg-white/[0.04] border border-white/10 cursor-pointer"
+      className="relative flex flex-col aspect-[3/4] rounded-xl overflow-hidden bg-white/[0.10] border border-white/20 cursor-pointer"
       onClick={() => setShowDelete((prev) => !prev)}
     >
       {/* Image or placeholder */}
@@ -46,7 +46,7 @@ export default function WardrobeItem({ item, onDelete }: WardrobeItemProps) {
 
       {/* Bottom overlay */}
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent px-3 pt-6 pb-3">
-        <p className="text-[#f0eaff] text-xs font-medium font-inter truncate capitalize">{label}</p>
+        <p className="text-[#f5f0ff] text-xs font-medium font-inter truncate capitalize">{label}</p>
         {item.analysis.type && (
           <span className="mt-1 inline-block rounded-full bg-[#c77dff]/20 border border-[#c77dff]/30 text-[#e0aaff] text-[10px] px-2 py-0.5 capitalize">
             {item.analysis.type}

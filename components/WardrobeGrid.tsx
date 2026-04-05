@@ -13,7 +13,7 @@ export default function WardrobeGrid({ items, onDelete }: WardrobeGridProps) {
   if (items.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-20 text-center">
-        <p className="text-[#f0eaff]/40 text-base font-inter">Nothing here yet ✨</p>
+        <p className="text-[#f5f0ff]/40 text-base font-inter">Nothing here yet ✨</p>
       </div>
     )
   }

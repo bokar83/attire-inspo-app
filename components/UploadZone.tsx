@@ -56,7 +56,7 @@ export default function UploadZone({
               <span style={{ color: '#c77dff', fontWeight: 600 }}>Tap to upload</span>{' '}
               a photo
             </p>
-            <p className="text-xs mt-1" style={{ color: 'rgba(240,234,255,0.3)' }}>
+            <p className="text-xs mt-1" style={{ color: 'rgba(245,240,255,0.72)' }}>
               or drag it here
             </p>
           </>

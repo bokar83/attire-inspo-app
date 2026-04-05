@@ -51,16 +51,16 @@ export default function IdeasPage() {
   }
 
   const inputClass =
-    'w-full rounded-xl bg-white/[0.06] border border-white/10 px-4 py-3 text-[#f0eaff] placeholder:text-[#f0eaff]/30 outline-none focus:border-[#c77dff]/50 text-sm font-inter transition-colors'
+    'w-full rounded-xl bg-white/[0.12] border border-white/20 px-4 py-3 text-[#f5f0ff] placeholder:text-[#f5f0ff]/60 outline-none focus:border-[#c77dff]/50 text-sm font-inter transition-colors'
 
   return (
     <PageTransition>
     <div className="pt-6 pb-28 px-4">
-      <h1 className="font-syne text-2xl font-bold text-[#f0eaff]">
+      <h1 className="font-syne text-2xl font-bold text-[#f5f0ff]">
         Outfit Ideas ✨
       </h1>
 
-      <p className="text-sm text-[#f0eaff]/50 uppercase tracking-wider mb-3 mt-6">
+      <p className="text-sm text-[#f5f0ff]/75 uppercase tracking-wider mb-3 mt-6">
         Pick your mood
       </p>
       <div className="grid grid-cols-2 gap-3">
@@ -74,7 +74,7 @@ export default function IdeasPage() {
         ))}
       </div>
 
-      <p className="text-sm text-[#f0eaff]/50 uppercase tracking-wider mb-3 mt-6">
+      <p className="text-sm text-[#f5f0ff]/75 uppercase tracking-wider mb-3 mt-6">
         Occasion
       </p>
       <input
@@ -85,7 +85,7 @@ export default function IdeasPage() {
         className={inputClass}
       />
 
-      <p className="text-sm text-[#f0eaff]/50 uppercase tracking-wider mb-3 mt-6">
+      <p className="text-sm text-[#f5f0ff]/75 uppercase tracking-wider mb-3 mt-6">
         Weather / Season
       </p>
       <input
@@ -100,7 +100,7 @@ export default function IdeasPage() {
         whileTap={{ scale: 0.97 }}
         onClick={handleGenerate}
         disabled={loading}
-        className="w-full py-4 rounded-2xl font-semibold font-syne text-[#080610] bg-gradient-to-r from-[#c77dff] to-[#ff85a1] mt-8 disabled:opacity-50 transition-opacity"
+        className="w-full py-4 rounded-2xl font-semibold font-syne text-[#12102a] bg-gradient-to-r from-[#c77dff] to-[#ff85a1] mt-8 disabled:opacity-50 transition-opacity"
       >
         Generate Outfit Ideas ✨
       </motion.button>
@@ -126,7 +126,7 @@ export default function IdeasPage() {
             setSelectedMoods([])
             setResult(null)
           }}
-          className="w-full mt-4 py-3 text-sm text-[#f0eaff]/50 font-inter hover:text-[#f0eaff]/80 transition-colors"
+          className="w-full mt-4 py-3 text-sm text-[#f5f0ff]/75 font-inter hover:text-[#f5f0ff]/80 transition-colors"
         >
           Try another vibe
         </button>

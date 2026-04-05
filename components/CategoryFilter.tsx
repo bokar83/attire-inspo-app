@@ -18,8 +18,8 @@ export default function CategoryFilter({ selected, onChange }: CategoryFilterPro
           className={cn(
             'rounded-full px-4 py-1.5 text-sm whitespace-nowrap transition-all duration-200',
             selected === category
-              ? 'bg-[#c77dff] text-[#080610] font-semibold'
-              : 'bg-white/[0.08] text-[#f0eaff]/70 border border-white/10 hover:bg-white/[0.12]'
+              ? 'bg-[#c77dff] text-[#12102a] font-semibold'
+              : 'bg-white/[0.08] text-[#f5f0ff]/70 border border-white/20 hover:bg-white/[0.12]'
           )}
         >
           {category}

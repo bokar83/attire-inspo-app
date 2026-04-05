@@ -47,7 +47,7 @@ export default function HomePage() {
           >
             Hey Aminöa 👋
           </h1>
-          <p className="text-xs" style={{ color: 'rgba(240,234,255,0.5)' }}>
+          <p className="text-xs" style={{ color: 'rgba(245,240,255,0.75)' }}>
             What&apos;s the vibe today?
           </p>
         </div>
@@ -84,9 +84,9 @@ export default function HomePage() {
                           color: '#e0aaff',
                         }
                       : {
-                          background: 'rgba(255,255,255,0.05)',
-                          borderColor: 'rgba(255,255,255,0.12)',
-                          color: 'rgba(240,234,255,0.65)',
+                          background: 'rgba(255,255,255,0.12)',
+                          borderColor: 'rgba(255,255,255,0.25)',
+                          color: 'rgba(245,240,255,0.90)',
                         }
                   }
                 >
@@ -111,14 +111,14 @@ export default function HomePage() {
           >
             Your Closet
           </p>
-          <Link href="/closet" className="text-xs" style={{ color: 'rgba(224,170,255,0.7)' }}>
+          <Link href="/closet" className="text-xs" style={{ color: 'rgba(224,170,255,0.90)' }}>
             See all →
           </Link>
         </div>
         {preview.length === 0 ? (
           <GlassCard className="text-center py-8">
             <div className="text-4xl mb-3">👗</div>
-            <p className="text-sm mb-4" style={{ color: 'rgba(240,234,255,0.5)' }}>
+            <p className="text-sm mb-4" style={{ color: 'rgba(245,240,255,0.75)' }}>
               Your closet is empty
             </p>
             <Link href="/add">
@@ -139,8 +139,8 @@ export default function HomePage() {
                 initial={{ opacity: 0, scale: 0.92 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.25 + i * 0.06 }}
-                className="flex-shrink-0 w-28 rounded-2xl overflow-hidden border border-white/10"
-                style={{ background: 'rgba(255,255,255,0.04)' }}
+                className="flex-shrink-0 w-28 rounded-2xl overflow-hidden border border-white/20"
+                style={{ background: 'rgba(255,255,255,0.12)' }}
               >
                 <div
                   className="aspect-[3/4] flex items-center justify-center text-3xl"
@@ -160,7 +160,7 @@ export default function HomePage() {
                   </p>
                   <p
                     className="text-[0.65rem] truncate"
-                    style={{ color: 'rgba(240,234,255,0.4)' }}
+                    style={{ color: 'rgba(245,240,255,0.70)' }}
                   >
                     {item.analysis?.style || ''}
                   </p>

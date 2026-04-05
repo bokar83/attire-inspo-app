@@ -8,13 +8,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: '#080610',
+        bg: '#12102a',
         accent: '#c77dff',
         lilac: '#e0aaff',
         rose: '#ff85a1',
         champagne: '#ffd6a5',
-        'text-primary': '#f0eaff',
-        'text-muted': 'rgba(240,234,255,0.50)',
+        'text-primary': '#f5f0ff',
+        'text-muted': 'rgba(245,240,255,0.70)',
       },
       fontFamily: {
         syne: ['Syne', 'sans-serif'],

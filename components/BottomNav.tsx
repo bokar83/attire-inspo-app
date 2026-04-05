@@ -16,9 +16,9 @@ export default function BottomNav() {
 
   return (
     <nav
-      className="fixed bottom-0 left-0 right-0 z-50 flex justify-around items-center border-t border-white/[0.06]"
+      className="fixed bottom-0 left-0 right-0 z-50 flex justify-around items-center border-t border-white/20"
       style={{
-        background: 'rgba(8,6,16,0.85)',
+        background: 'rgba(18,16,42,0.90)',
         backdropFilter: 'blur(20px)',
         paddingBottom: 'max(10px, env(safe-area-inset-bottom))',
         paddingTop: '10px',
@@ -44,7 +44,7 @@ export default function BottomNav() {
             </motion.span>
             <span
               className="text-[0.65rem] font-medium tracking-wide transition-colors"
-              style={{ color: isActive ? '#c77dff' : 'rgba(240,234,255,0.4)' }}
+              style={{ color: isActive ? '#c77dff' : 'rgba(245,240,255,0.65)' }}
             >
               {tab.label}
             </span>
