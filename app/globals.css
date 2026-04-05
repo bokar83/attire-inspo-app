@@ -15,12 +15,8 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-body {
+html, body {
+  height: 100%;
   background: #12102a;
   color: #f5f0ff;
   font-family: 'Inter', system-ui, sans-serif;
@@ -30,4 +26,4 @@ body {
 ::-webkit-scrollbar { display: none; }
 * { scrollbar-width: none; }
 
-body { overscroll-behavior: none; }
+body { overscroll-behavior-y: contain; }
